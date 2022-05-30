@@ -9,6 +9,7 @@ class Solution
 public:
     bool isMatch(string s, string p)
     {
+        /*
         char ch = '\0';
         int i = 0, j = 0;
         for (; i < s.size() && j < p.size();)
@@ -64,6 +65,8 @@ public:
         if (p[j] != '\0' || s[i] != '\0')
             return false;
         return true;
+        */
+        return is_match(s, 0, p, 0);
     }
 
     bool is_match(const string &s, int bs, const string &p, int bp)
